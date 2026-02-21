@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Simsiqueste — Art & Vision</title>
+  <meta name="description" content="Simsiqueste — Contemporary artist. Explore works, exhibitions, and visual narratives." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Viaoda+Libre:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="header">
+    <a href="#" class="logo" data-magnetic>
+      <span class="logo-text">Simsiqueste</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#gallery" class="nav-link" data-magnetic>Gallery</a>
+      <a href="#about" class="nav-link" data-magnetic>About</a>
+      <a href="#exhibitions" class="nav-link" data-magnetic>Exhibitions</a>
+      <a href="#contact" class="nav-link" data-magnetic>Contact</a>
+    </nav>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+    </button>
+  </header>
+
+  <div class="menu-overlay" aria-hidden="true">
+    <nav class="menu-nav">
+      <a href="#gallery" class="menu-link">Gallery</a>
+      <a href="#about" class="menu-link">About</a>
+      <a href="#exhibitions" class="menu-link">Exhibitions</a>
+      <a href="#contact" class="menu-link">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="hero-gradient"></div>
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
+        <div class="hero-shape hero-shape-3"></div>
+      </div>
+      <div class="hero-snow" id="hero-snow" aria-hidden="true">
+        <canvas id="hero-snow-canvas"></canvas>
+      </div>
+      <div class="hero-content">
+        <p class="hero-label reveal">Art & Vision</p>
+        <div class="hero-title-leaf reveal">
+          <h1 class="hero-title">Simsiqueste</h1>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span class="scroll-text">Scroll</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title reveal">Works</h2>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-item reveal" data-speed="0.05">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-1"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 1</h3>
+              <span class="gallery-medium">6 July 2021</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.08">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-2"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 2</h3>
+              <span class="gallery-medium">10 May 2021</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.06">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-3"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 3</h3>
+              <span class="gallery-medium">20 May 2021</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.07">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-4"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 4</h3>
+              <span class="gallery-medium">7 September 2021</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.05">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-5"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 5</h3>
+              <span class="gallery-medium">7 September 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.09">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-6"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 6</h3>
+              <span class="gallery-medium">29 March 2021</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.05">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-7"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 7</h3>
+              <span class="gallery-medium">31 July 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.08">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-8"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 8</h3>
+              <span class="gallery-medium">23 July 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.06">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-9"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 9</h3>
+              <span class="gallery-medium">2 February 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.07">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-10"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 10</h3>
+              <span class="gallery-medium">8 April 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.05">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-11"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 11</h3>
+              <span class="gallery-medium">29 March 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.09">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-12"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 12</h3>
+              <span class="gallery-medium">7 August 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.05">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-13"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 13</h3>
+              <span class="gallery-medium">22 April 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.08">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-14"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 14</h3>
+              <span class="gallery-medium">20 December 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.06">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-15"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 15</h3>
+              <span class="gallery-medium">11 April 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.07">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-16"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 16</h3>
+              <span class="gallery-medium">27 January 2019</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.05">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-17"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 17</h3>
+              <span class="gallery-medium">28 January 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.09">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-18"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 18</h3>
+              <span class="gallery-medium">12 April 2021</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.05">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-19"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 19</h3>
+              <span class="gallery-medium">26 June 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.08">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-20"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 20</h3>
+              <span class="gallery-medium">31 January 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.06">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-21"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 21</h3>
+              <span class="gallery-medium">13 April 2019</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.07">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-22"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 22</h3>
+              <span class="gallery-medium">15 February 2019</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.05">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-23"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 23</h3>
+              <span class="gallery-medium">13 April 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.09">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-24"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 24</h3>
+              <span class="gallery-medium">17 April 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.05">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-25"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 25</h3>
+              <span class="gallery-medium">24 January 2018</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.08">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-26"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 26</h3>
+              <span class="gallery-medium">29 January 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.06">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-27"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 27</h3>
+              <span class="gallery-medium">28 December 2020</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.07">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-28"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 28</h3>
+              <span class="gallery-medium">21 April 2021</span>
+            </div>
+          </a>
+        </article>
+        <article class="gallery-item reveal" data-speed="0.05">
+          <a href="#" class="gallery-link">
+            <div class="gallery-image-wrap">
+              <div class="gallery-image gallery-image-29"></div>
+              <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Work 29</h3>
+              <span class="gallery-medium">2 May 2021</span>
+            </div>
+          </a>
+        </article>
+      </div>
+      <a href="#" class="gallery-more reveal">View all works</a>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-snow" id="about-snow" aria-hidden="true">
+        <canvas id="about-snow-canvas"></canvas>
+      </div>
+      <div class="about-inner">
+        <div class="about-text">
+          <span class="section-num">02</span>
+          <h2 class="section-title reveal">Art is a quest.</h2>
+          <div class="about-body reveal">
+            <p>“I found I could say things with colour and shapes that I couldn't say any other way — things I had no words for.”</p>
+            <p>My work sits at the intersection of craft and concept, exploring form, material, and narrative through contemporary visual language.</p>
+            <p>The name Simsiqueste suggests both a journey and a question—a quest for meaning through visual expression. Every piece I create is chosen with that intention.</p>
+          </div>
+          <a href="#contact" class="about-cta reveal" data-magnetic>Get in touch</a>
+        </div>
+        <div class="about-visual reveal">
+          <img src="about-boat.png" alt="Shikara on water at sunset" class="about-image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibitions" id="exhibitions">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title reveal">Biggest art exhibitions</h2>
+      </div>
+      <div class="exhibitions-list">
+        <a href="https://www.labiennale.org/en/art/2026" class="exhibition-item reveal" target="_blank" rel="noopener noreferrer" data-magnetic>
+          <span class="exhibition-date">May 9 — Nov 22, 2026</span>
+          <h3 class="exhibition-title">Venice Biennale</h3>
+          <p class="exhibition-desc">The world's oldest and most prestigious contemporary art biennial, featuring national pavilions and curated exhibitions across Venice.</p>
+          <span class="exhibition-link">Venice, Italy →</span>
+        </a>
+        <a href="https://www.artbasel.com/basel" class="exhibition-item reveal" target="_blank" rel="noopener noreferrer" data-magnetic>
+          <span class="exhibition-date">Jun 18 — 21, 2026</span>
+          <h3 class="exhibition-title">Art Basel</h3>
+          <p class="exhibition-desc">The premier international art fair showcasing modern and contemporary works from leading galleries worldwide.</p>
+          <span class="exhibition-link">Basel, Switzerland →</span>
+        </a>
+        <a href="https://www.documenta.de/en" class="exhibition-item reveal" target="_blank" rel="noopener noreferrer" data-magnetic>
+          <span class="exhibition-date">Every 5 years</span>
+          <h3 class="exhibition-title">Documenta</h3>
+          <p class="exhibition-desc">One of the world's most important exhibitions of contemporary art, held every five years in Kassel, Germany.</p>
+          <span class="exhibition-link">Kassel, Germany →</span>
+        </a>
+        <a href="https://whitney.org/exhibitions/2026-biennial" class="exhibition-item reveal" target="_blank" rel="noopener noreferrer" data-magnetic>
+          <span class="exhibition-date">Mar 8 — Jun 2026</span>
+          <h3 class="exhibition-title">Whitney Biennial</h3>
+          <p class="exhibition-desc">The preeminent survey of contemporary American art, showcasing the most significant works and ideas from artists across the United States.</p>
+          <span class="exhibition-link">New York, USA →</span>
+        </a>
+        <a href="https://www.frieze.com/fairs/frieze-new-york" class="exhibition-item reveal" target="_blank" rel="noopener noreferrer" data-magnetic>
+          <span class="exhibition-date">May 13 — 17, 2026</span>
+          <h3 class="exhibition-title">Frieze New York</h3>
+          <p class="exhibition-desc">A leading international art fair featuring contemporary works from top galleries worldwide, with special focus on emerging artists and performance art.</p>
+          <span class="exhibition-link">New York, USA →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-snow" id="contact-snow" aria-hidden="true">
+        <canvas id="contact-snow-canvas"></canvas>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-content">
+          <div class="contact-text">
+            <div class="contact-header reveal">
+          <span class="section-num">04</span>
+          <h2 class="section-title">Let’s connect</h2>
+          <p class="contact-tagline">For inquiries, commissions, collaborations, or a simple hello.</p>
+        </div>
+        <div class="contact-links reveal">
+          <a href="mailto:simsiqueste70@gmail.com" class="contact-link" data-magnetic>simsiqueste70@gmail.com</a>
+          <a id="contact-instagram" href="https://instagram.com/simsiqueste" class="contact-link" data-magnetic target="_blank" rel="noopener noreferrer" aria-label="Open Simsiqueste on Instagram">@simsiqueste</a>
+        </div>
+            <footer class="footer reveal">
+              <p>© 2025 Simsiqueste. All rights reserved.</p>
+            </footer>
+          </div>
+          <div class="contact-visual reveal">
+            <img src="contact-lantern.png" alt="Lantern with candle" class="contact-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox book-overlay" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="View artwork in book">
+    <div class="book-crossfade-art" id="book-crossfade-art" aria-hidden="true"></div>
+    <div class="book-perspective" id="book-perspective">
+      <div class="book-scene">
+        <div class="book" id="book">
+          <div class="book-spine" aria-hidden="true"></div>
+          <div class="book-content">
+            <div class="book-inner" id="book-inner">
+              <div class="book-magic-glow" id="book-magic-glow" aria-hidden="true"></div>
+              <div class="book-page book-page-left">
+                <div class="book-page-art parchment-content" id="book-page-art"></div>
+              </div>
+              <div class="book-page book-page-right">
+                <div class="book-page-desc parchment-content">
+                  <h2 class="book-art-title" id="book-art-title"></h2>
+                  <p class="book-art-medium" id="book-art-medium"></p>
+                  <p class="book-art-desc">A piece from the Simsiqueste collection — explore form, material, and narrative through contemporary visual language.</p>
+                </div>
+                <button type="button" class="wax-seal" id="wax-seal-close" aria-label="Close book"><span class="visually-hidden">Close book</span></button>
+              </div>
+            </div>
+            <div class="book-back leather-cover" aria-hidden="true"></div>
+            <div class="book-cover" id="book-cover" aria-hidden="true">
+              <div class="book-cover-face leather-cover" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="book-glow" id="book-glow" aria-hidden="true"></div>
+  </div>
+
+  <audio id="book-sound-open" preload="auto" aria-hidden="true">
+    <source src="assets/sounds/book-open.mp3" type="audio/mpeg" />
+    <source src="assets/sounds/book-open.ogg" type="audio/ogg" />
+  </audio>
+  <audio id="book-sound-close" preload="auto" aria-hidden="true">
+    <source src="assets/sounds/book-close.mp3" type="audio/mpeg" />
+    <source src="assets/sounds/book-close.ogg" type="audio/ogg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
